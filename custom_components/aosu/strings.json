@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Aosu Cameras",
+        "description": "Connect your Aosu account and optional local CompreFace face recognition server.",
+        "data": {
+          "email": "Aosu Email",
+          "password": "Aosu Password",
+          "region": "Region",
+          "scan_interval": "Polling interval (seconds)",
+          "compreface_url": "Local CompreFace URL (optional, e.g. http://192.168.1.10:8000)",
+          "compreface_api_key": "CompreFace Recognition API Key (optional)",
+          "face_threshold": "Face recognition similarity threshold (0.3 - 0.99)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid Aosu credentials",
+      "cannot_connect": "Unable to reach Aosu Cloud"
+    },
+    "abort": {
+      "already_configured": "This Aosu account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Aosu Cameras Options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "compreface_url": "Local CompreFace URL (optional)",
+          "compreface_api_key": "CompreFace Recognition API Key (optional)",
+          "face_threshold": "Face recognition similarity threshold (0.3 - 0.99)"
+        }
+      }
+    }
+  }
+}

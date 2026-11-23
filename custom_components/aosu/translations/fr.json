@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Caméras Aosu",
+        "description": "Connectez votre compte Aosu et (optionnel) votre serveur local CompreFace pour la reconnaissance faciale gratuite.",
+        "data": {
+          "email": "Email Aosu",
+          "password": "Mot de passe Aosu",
+          "region": "Région",
+          "scan_interval": "Intervalle de rafraîchissement (secondes)",
+          "compreface_url": "URL CompreFace locale (optionnel, ex. http://192.168.1.10:8000)",
+          "compreface_api_key": "Clé API Recognition CompreFace (optionnel)",
+          "face_threshold": "Seuil de confiance reconnaissance faciale (0.3 - 0.99)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Identifiants Aosu invalides",
+      "cannot_connect": "Impossible de joindre le cloud Aosu"
+    },
+    "abort": {
+      "already_configured": "Ce compte Aosu est déjà configuré"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options Caméras Aosu",
+        "data": {
+          "scan_interval": "Intervalle de rafraîchissement (secondes)",
+          "compreface_url": "URL CompreFace locale (optionnel)",
+          "compreface_api_key": "Clé API Recognition CompreFace (optionnel)",
+          "face_threshold": "Seuil de confiance reconnaissance faciale (0.3 - 0.99)"
+        }
+      }
+    }
+  }
+}

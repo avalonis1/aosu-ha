@@ -1,0 +1,21 @@
+# Artifacts & APK extractions
+*.xapk
+*.apk
+extracted/
+
+# Local secrets & session cache
+.env
+.aosu_session.json
+faces/
+faces_index.json
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+dist/
+build/
