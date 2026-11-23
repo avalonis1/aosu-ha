@@ -160,7 +160,9 @@ class AosuClient:
                 "pwType": "2",
             },
         )
-        session = AosuSession.from_dict(data)
+        session = AosuSession.from_dict(data if isinstance(data, dict) else {})
+        if not session.uid or not session.sid:
+            raise AosuApiError("auth", "Identifiants invalides (uid/sid vide retourné par Aosu)", data)
         if not session.region:
             session.region = target_region
         self.region = session.region

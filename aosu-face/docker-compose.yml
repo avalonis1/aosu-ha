@@ -1,0 +1,20 @@
+services:
+  aosu-face:
+    build:
+      context: https://github.com/avalonis1/aosu-ha.git#main:aosu-face
+    container_name: aosu-face
+    restart: unless-stopped
+    ports:
+      - "8100:8100"
+    environment:
+      - AOSU_FACE_MODEL=buffalo_sc
+      - AOSU_FACE_API_KEY=aosu-local-key
+    volumes:
+      - aosu-face-data:/data
+    deploy:
+      resources:
+        limits:
+          memory: 1536M
+
+volumes:
+  aosu-face-data:
